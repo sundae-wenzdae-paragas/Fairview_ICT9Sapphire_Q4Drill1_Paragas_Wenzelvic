@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Drill 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    body{
+        background-image:           url(https://i.extremetech.com/imagery/content-types/04syl2vD0t7oZLT8MxlpHOx/hero-image.fit_lim.v1729775493.jpg);
+        size:cover;
+        background-repeat:no-repeat;
+    }
+
+    .container{
+        background-color:rgba(2, 221, 39, 0.4);
+        border-radius:20px;
+        border:10px solid rgba(0, 255, 170, 0.5);
+    }
+</style>
+</head>
+<body>
+    <br><br>
+    <div class="container"><br>
+    <h1 class="text-white text-center">Electricity Consumption Classifier Page</h1>
+    <input type="text" id="kWhusage" class="form-control" placeholder="type here...">
+    <button class="btn btn-info" onclick="kWhusage()">Button </button><br><br></div>
+
+    <script>
+        //checkAge
+        function kWhusage(){
+
+        var age = document.getElementById("kWhusage").value;
+        if(isNaN(age) || kWhusage < 100 || kWhusage > 0 ){
+            alert("Lifeline Consumer: Discouned Electricity Rates")
+        }
+        else if (kWhusage < 200 || kWhusage > 101){
+            alert("Low Consumption: Normal Residency Rate");
+        }
+        else if(age > 18){
+            alert("You are of legal age.");
+        }
+        else if(age > 18){
+            alert("You are of legal age.");
+        }
+        else if(age > 18){
+            alert("You are of legal age.");
+        }
+        else{
+            alert("Your electricity usage could not be found");
+        }
+    }
+    </script>
+    </body>
+</html>
