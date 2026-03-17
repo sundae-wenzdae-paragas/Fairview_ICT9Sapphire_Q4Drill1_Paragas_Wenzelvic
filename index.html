@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style>
     body{
-        background-image:           url(https://i.extremetech.com/imagery/content-types/04syl2vD0t7oZLT8MxlpHOx/hero-image.fit_lim.v1729775493.jpg);
-        size:cover;
+        background-image:url(https://media.istockphoto.com/id/1369161243/photo/light-bulb-with-wood-house-on-the-table-a-symbol-for-construction-creative-light-bulb-idea.jpg?s=612x612&w=0&k=20&c=8y7-wCt9luDEmMR6Yfpx6Msa1Lb8ipNRZ4yv1-ToG-M=);
+        background-size:cover;
         background-repeat:no-repeat;
     }
 
@@ -31,25 +31,37 @@
         function kWhusage(){
 
         var kWhusage = document.getElementById("kWhusage").value;
-        if(isNaN(kWhusage) || kWhusage < 100 || kWhusage > 0 ){
-            alert("Discouned Electricity Rates")
+
+        if (isNaN (kWhusage) || kWhusage <= 0 ){
+            alert("Please input a number above 0")
         }
-        else if (kWhusage < 200 || kWhusage > 101){
-            alert("Normal Residency Rate");
+        else if(kWhusage <= 100 || kWhusage > 0 ){
+            alert("Discouned electricity rates")
         }
-        else if(age > 18){
-            alert("You are of legal age.");
+        else if (kWhusage <= 200 || kWhusage >= 101){
+            alert("Normal residency rate");
         }
-        else if(age > 18){
-            alert("You are of legal age.");
+        else if(kWhusage <= 300 || kWhusage >= 201){
+            alert("Typical electricity usage");
         }
-        else if(age > 18){
-            alert("You are of legal age.");
+        else if(kWhusage <= 500 || kWhusage >= 301){
+            alert("Higher electricity usage");
+        }
+        else if(kWhusage > 500){
+            alert("Heavy electricity user");
         }
         else{
             alert("Your electricity usage could not be found");
         }
     }
     </script>
+<br>
+<div class="container2">
+<h2 class="text-center text-light">
+    Sources:
+</h2>
+<ul class="list-unstyled text-center">
+         <li><a href="https://www.freeconvert.com/webp-converter" target="_blank" class="text-info"><strong>FreeConvert (WebP Converter)</strong></a></li></ul>
+</div>
     </body>
 </html>
