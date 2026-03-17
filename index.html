@@ -32,19 +32,19 @@
 
         var kWhusage = document.getElementById("kWhusage").value;
 
-        if (isNaN (kWhusage) || kWhusage <= 0 ){
+        if (isNaN (kWhusage) && kWhusage <= 0 ){
             alert("Please input a number above 0")
         }
-        else if(kWhusage <= 100 || kWhusage > 0 ){
+        else if(kWhusage <= 100 && kWhusage > 0 ){
             alert("Discouned electricity rates")
         }
-        else if (kWhusage <= 200 || kWhusage >= 101){
+        else if (kWhusage <= 200 && kWhusage >= 101){
             alert("Normal residency rate");
         }
-        else if(kWhusage <= 300 || kWhusage >= 201){
+        else if(kWhusage <= 300 && kWhusage >= 201){
             alert("Typical electricity usage");
         }
-        else if(kWhusage <= 500 || kWhusage >= 301){
+        else if(kWhusage <= 500 && kWhusage >= 301){
             alert("Higher electricity usage");
         }
         else if(kWhusage > 500){
