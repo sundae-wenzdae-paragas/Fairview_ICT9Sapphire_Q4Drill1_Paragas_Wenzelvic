@@ -31,9 +31,8 @@
         //check electricity usage
         function kWhusage(){
 
-        var kWhusage = document.getElementById("kWhusage").value;
-        document.getElementById("kWhusage").innerHTML = "Manage your electricity consumption wisely! 😊";
-        let kWhusage = document.getElementById("kWhusage").value;    
+        let kWhusage = document.getElementById("kWhusage").value;
+        document.getElementById("kWhusage").innerHTML = "Manage your electricity consumption wisely! 😊"; 
         let x = "Invalid Input";
         let y = "Lifeline Consumption";
         let z = "Low Consumption";
@@ -61,7 +60,7 @@
             alert('You have a' + c + ': Heavy electricity user');
         }
         else{
-            alert('You have a' + d + 'Your electricity usage could not be found. Please input a correct number');
+            alert('You have a' + d + ': Your electricity usage could not be found. Please input a correct number');
         } //checks if the user's input is not a number
     }
     </script>
