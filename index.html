@@ -23,6 +23,7 @@
     <br><br>
     <div class="container"><br>
     <h1 class="text-white text-center">Electricity Consumption Classifier Page</h1>
+    <p class="text-center text-light">Enter your electricity consumption below to know your consumption level!</p>
     <input type="text" id="kWhusage" class="form-control" placeholder="type here...">
     <button class="btn btn-info" onclick="kWhusage()">Button </button><br><br></div>
 
@@ -30,7 +31,7 @@
         //checkAge
         function kWhusage(){
 
-        var kWhusage = document.getElementById("kWhusage").value;
+        var kWhusage = document.getElementById("kWhusage").innerHTML = "Manage your electricity consumption wisely!😁😁😁";
 
         if (isNaN (kWhusage) && kWhusage <= 0 ){
             alert("Please input a number above 0")
@@ -53,8 +54,6 @@
         else{
             alert("Your electricity usage could not be found");
         }
-
-        document.write("Manage your electricity consumption wisely!😁")
     }
     </script>
 <br>
