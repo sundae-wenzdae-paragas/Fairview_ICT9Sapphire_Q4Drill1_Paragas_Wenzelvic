@@ -25,14 +25,16 @@
     <h1 class="text-white text-center">Electricity Consumption Classifier Page</h1>
     <p class="text-center text-light">Enter your electricity consumption below to know your consumption level!</p>
     <input type="text" id="kWhusage" class="form-control" placeholder="type here...">
-    <button class="btn btn-info" onclick="kWhusage()">Button </button><br><br></div>
+    <button class="btn btn-info" onclick="kWhusage()">Button </button><br><br>
+<h2 id="display-message" class="text-center text-light"></h2>
+</div>
 
     <script>
         //check electricity usage
         function kWhusage(){
 
         let kWhusage = document.getElementById("kWhusage").value;
-        document.getElementById("kWhusage").innerHTML = "Manage your electricity consumption wisely! 😊"; 
+        document.getElementById("display-message").innerHTML = "Manage your electricity consumption wisely! 😊"; 
         let x = "Invalid Input";
         let y = "Lifeline Consumption";
         let z = "Low Consumption";
