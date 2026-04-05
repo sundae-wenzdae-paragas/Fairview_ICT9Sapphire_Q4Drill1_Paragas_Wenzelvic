@@ -33,27 +33,35 @@
 
         var kWhusage = document.getElementById("kWhusage").value;
         document.getElementById("kWhusage").innerHTML = "Manage your electricity consumption wisely! 😊";
+        let kWhusage = document.getElementById("kWhusage").value;    
+        let x = "Invalid Input";
+        let y = "Lifeline Consumption";
+        let z = "Low Consumption";
+        let a = "Average Consumption";
+        let b = "High Consumption";
+        let c = "Very High Consumption"
+        let d = "Wrong Input"
 
         if (isNaN (kWhusage) && kWhusage <= 0 ){
-            alert("Invalid : Please input a number above 0")
+            alert('You have an' + x + ': Please input a number above 0.')
         } //checks if the user input a number that is 0 or below
         else if(kWhusage <= 100 && kWhusage > 0 ){
-            alert("Lifeline Consumer : Discouned electricity rates")
+            alert('You have a' + y + ': Discouned electricity rates')
         }
         else if (kWhusage <= 200 && kWhusage >= 101){
-            alert("Low Consumption : Normal residency rate");
+            alert('You have a' + z + ': Normal residency rate');
         }
         else if(kWhusage <= 300 && kWhusage >= 201){
-            alert("Average Consumption : Typical electricity usage");
+            alert('You have an' + a + ': Typical electricity usage');
         }
         else if(kWhusage <= 500 && kWhusage >= 301){
-            alert("High Consumption : Higher electricity usage");
+            alert('You have a' + b + ': Higher electricity usage');
         }
         else if(kWhusage > 500){
-            alert("Very High Consumption : Heavy electricity user");
+            alert('You have a' + c + ': Heavy electricity user');
         }
         else{
-            alert("Wrong Input : Your electricity usage could not be found");
+            alert('You have a' + d + 'Your electricity usage could not be found. Please input a correct number');
         } //checks if the user's input is not a number
     }
     </script>
