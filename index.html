@@ -28,14 +28,14 @@
     <button class="btn btn-info" onclick="kWhusage()">Button </button><br><br></div>
 
     <script>
-        //checkAge
+        //check electricity usage
         function kWhusage(){
 
         var kWhusage = document.getElementById("kWhusage").innerHTML = "Manage your electricity consumption wisely!😁😁😁";
 
         if (isNaN (kWhusage) && kWhusage <= 0 ){
             alert("Please input a number above 0")
-        }
+        } //checks if the user input a number that is 0 or below
         else if(kWhusage <= 100 && kWhusage > 0 ){
             alert("Discouned electricity rates")
         }
